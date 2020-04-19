@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shop</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style/style.css" />
+<link rel="stylesheet" href="./style/media/media.css">
+</head>
+  <!-- // -->
+<body>
+<!-- All container -->
+  <div id="container">
+<!-- header -->
+    <header>
+    <div class="header-first-row">
+      <div class="header-first-row_title">
+        <h1>Decore</h1>
+      </div>
+      <div class="header-first-row_logo">
+       <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+      </div>
+      <div class="first-row_leng">
+        <select name="lang" id="leng">
+        <option value="ru">Ru</option>
+        <option value="en">En</option>
+      </select>
+      </div>
+      <div id="userBtn" class="first-row_user">
+        <img src="./img/user (1).png" alt="user" />
+        Вход
+        <div id="userForm" class="user">
+          <form id="user_form" action="#">
+            <input id="form_name" type="text" placeholder="Имя">
+            <input id="form_email" type="email" placeholder="@mail">
+            <input id="form_password" type="password" placeholder="Пороль">
+            <input id="form_submit" type="submit">
+            <input id="form_reset" type="reset">
+          </form>
+        </div>
+      </div>
+      
+      <div class="first-row_car">
+        <div class="catalog_counter">0</div>
+        <img src="./img/shopping-cart-of-checkered-design.png" alt="car" />
+        <div class="container_card"></div>
+        Корзина
+      </div>
+    </div>
+<!-- nav -->
+    <div class="header-second-row">
+      <nav>
+        <ul class="header-menu">
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#stock">Скидки</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+
+<!-- promo -->
+
+<div class="promo">
+    <div id="promo" class="slideShow-container">    
+        <div class="slide fade">
+            <img src="./img/diz1.jpg" alt="pero" height="440" width="920"/>
+        </div>
+        <div class="slide fade">
+            <img src="./img/diz2.jpg" alt="perya" height="440" width="920"/>
+        </div>
+        <div class="slide fade">
+            <img src="./img/diz3.jpg" alt="design" height="440" width="920" />
+        </div>
+        <div class="prev" onclick="pluseSlides(-1)">&#10094</div>
+        <div class="next" onclick="pluseSlides(1)">&#10095</div>
+    </div>
+    <div style="text-align: center;"> 
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>  
+</div>
+
+<div id="userСabinet">
+  <div><h3 id="name"></h3></div>
+  <div id="close"><div id="closeBtnUser">Выход</div></div>
+  <div id="curs">
+    <div id="cursUsd"></div>
+    <div id="valueUsd"></div>
+    <div id="cursEuro"></div>
+    <div id="valueEuro"></div>
+    <div id="cursRu"></div>
+    <div id="valueRu"></div>
+  </div>
+  <div id="lastOder"> История заказа:</div>
+</div>
+
+<!-- Catalog -->
+
+<section id="catalog">
+  <h2>Каталог</h2>
+  <div class="price">
+    <ul class="price-list">
+      <li value="0">Вазы</li>
+      <li value="1">Картины</li>
+      <li value="2">Фонарики</li>
+      <li value="3">Свечи</li>
+    </ul>
+  </div>
+  <div class="list">
+    <div id="boxContainer" class="contaiter_products">
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+
+<section id="about">
+  <h2>О нас</h2>
+  <div>
+    <img src="./img/vase/unnamed.jpg" height="100px" width="150px" alt="on" align="left";>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Iusto in minima blanditiis optio tenetur asperiores tempore,
+    iste temporibus et cupiditate id quae aut ea suscipit veniam perferendis nesciunt? 
+    Quia a voluptatum facere beatae soluta praesentium ut sapiente necessitatibus odio neque reiciendis
+    illum quibusdam, commodi veritatis. Nulla deleniti sit eligendi voluptate mollitia quam dolorem fugit
+    aperiam saepe quia eius asperiores aspernatur assumenda earum non, 
+    sint sequi inventore consectetur dicta voluptatibus vero.
+    Quia a voluptatum facere beatae soluta praesentium ut sapiente necessitatibus odio neque reiciendis
+    illum quibusdam, commodi veritatis. Nulla deleniti sit eligendi voluptate mollitia quam dolorem fugit
+    aperiam saepe quia eius asperiores aspernatur assumenda earum non, 
+    sint sequi inventore consectetur dicta voluptatibus vero.
+    <img src="./img/vase/vase4.png" height="100px" width="150px" alt="on" align="right">
+    Quia a voluptatum facere beatae soluta praesentium ut sapiente necessitatibus odio neque reiciendis
+    illum quibusdam, commodi veritatis. Nulla deleniti sit eligendi voluptate mollitia quam dolorem fugit
+    aperiam saepe quia eius asperiores aspernatur assumenda earum non, 
+    sint sequi inventore consectetur dicta voluptatibus vero.
+    Quia a voluptatum facere beatae soluta praesentium ut sapiente necessitatibus odio neque reiciendis
+    illum quibusdam, commodi veritatis. Nulla deleniti sit eligendi voluptate mollitia quam dolorem fugit
+    aperiam saepe quia eius asperiores aspernatur assumenda earum non, 
+    sint sequi inventore consectetur dicta voluptatibus vero.
+    Quia a voluptatum facere beatae soluta praesentium ut sapiente necessitatibus odio neque reiciendis
+    illum quibusdam, commodi veritatis. Nulla deleniti sit eligendi voluptate mollitia quam dolorem fugit
+    aperiam saepe quia eius asperiores aspernatur assumenda earum non, 
+    sint sequi inventore consectetur dicta voluptatibus vero.
+  </div>
+
+  </section>
+<section id="stock">
+  <h2>Скидки</h2>
+  <div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Unde atque voluptatem temporibus repellat aliquid accusantium ut, 
+    deserunt molestiae sit? Perspiciatis asperiores sit ipsum, 
+    autem atque ratione voluptas minus inventore eum!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    Quibusdam provident libero facere veniam temporibus corporis aliquam 
+    ab tenetur debitis totam cum, ducimus veritatis atque et commodi doloribus voluptatem. 
+    Natus, distinctio eum nesciunt consequatur odio molestiae reprehenderit 
+    corrupti deleniti et veritatis accusamus asperiores quibusdam excepturi sequi incidunt. 
+    Blanditiis minima, autem atque laboriosam aperiam reprehenderit, 
+    tenetur quas porro molestias unde alias veniam delectus sequi dolore, 
+    in quisquam. Consectetur, asperiores? Deserunt blanditiis nisi, 
+    porro unde totam exercitationem suscipit maiores eius quibusdam assumenda 
+    ea veniam ex atque sequi laboriosam fuga debitis accusantium labore, 
+    voluptatibus excepturi at. Dignissimos nemo assumenda sit fugit quia, 
+    rem exercitationem eligendi pariatur ut dolor atque fuga sint consequuntur eveniet 
+    officia iure temporibus, maxime alias itaque nesciunt porro, quidem eum? 
+    Temporibus nostrum doloremque accusantium, deleniti iure reiciendis perferendis 
+    cupiditate fugit ex accusamus repellendus! Mollitia eaque odio quidem alias nobis sit in, 
+    dolore hic officiis, quae doloribus maxime ipsa incidunt perferendis ipsam nemo quis 
+    assumenda voluptatum! Aliquid dignissimos nisi deserunt provident minus sunt esse 
+    fuga eius reprehenderit, quas ab modi voluptatibus laudantium hic ducimus eos quisquam 
+    asperiores culpa suscipit sint quae quaerat sequi odit corporis. 
+    Possimus cum soluta natus laboriosam ratione perspiciatis voluptas numquam! 
+    Tempora qui exercitationem, maiores adipisci eos vero ipsum deserunt fugit. 
+    Dolor eum provident repellendus non quis recusandae ipsa ducimus, molestiae iste mollitia 
+    voluptatem in, et vero eaque ea necessitatibus iure voluptates. 
+    Consequuntur numquam sunt molestiae nesciunt totam nihil officia consequatur 
+    est architecto. Consequatur nihil ad excepturi sed cum dignissimos, 
+    obcaecati placeat minus repudiandae itaque quisquam. Nobis repudiandae quasi 
+    quos minima possimus nulla architecto, cum vero necessitatibus unde dicta 
+    corrupti minus rerum harum modi tenetur inventore totam corporis eaque quo 
+    aspernatur quia impedit. Minima et quisquam mollitia accusantium dolorum consequuntur 
+    nam neque ducimus, autem aliquid nisi ex laudantium exercitationem hic! 
+    Inventore aut obcaecati non itaque illo molestias reprehenderit quisquam 
+    accusamus mollitia? Maxime quae veritatis, non ducimus odio illum repudiandae 
+    quos quia voluptas ex laboriosam eligendi, labore doloribus! Laudantium consequuntur, 
+    id minus nam ducimus consectetur harum magni itaque perferendis necessitatibus? 
+    Eaque magni aut exercitationem saepe accusamus sapiente odio ullam ipsam obcaecati, 
+    necessitatibus ipsa ea, quisquam reiciendis architecto tempore neque pariatur. 
+    Iste in commodi laboriosam, tempore quia saepe nulla deserunt! Ratione adipisci 
+    fuga tempore optio culpa cupiditate reiciendis numquam, nisi hic porro quibusdam 
+    eum laborum error. Enim aliquid, aspernatur autem voluptatum voluptate molestiae 
+    repudiandae quam maiores quos doloremque soluta suscipit consequuntur cum magnam 
+    ad id similique temporibus repellat culpa quas consectetur omnis beatae, deleniti porro. 
+    Iure nihil dolore distinctio magnam consequatur optio eius nesciunt quasi 
+    delectus dolorum, cum impedit perspiciatis nemo dicta eligendi molestias. 
+    Minus, tempore facilis. Cupiditate eaque quod illum quas quisquam veniam veritatis 
+    optio eveniet eum animi? A, necessitatibus! Blanditiis aliquid nisi rem? 
+    Repudiandae fuga minus explicabo corporis nostrum aliquam, beatae reprehenderit at 
+    id veniam similique asperiores eos eveniet tempora et, ea laborum. Quasi distinctio, 
+    voluptatem blanditiis at alias eum eos sint consequatur? Aspernatur inventore neque 
+    est ducimus eaque facilis optio repellat voluptatibus 
+    ex nemo at maxime corporis voluptas hic culpa repudiandae repellendus, omnis delectus 
+    accusantium. Qui, numquam blanditiis.
+  </div>
+</section>
+
+<!-- Contacts -->
+
+<section id="contacts">
+  <h2>Контакты</h2>
+  <div class="contacts_phone">
+    <P>Адрес: ул. Немига д 3 оф 432 </P> 
+    <p>Тел: +375 99 999 99 99</p>
+  </div>
+  <div class=" contacts_maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9401.441774263583!2d27.548547216609403!3d53.9075705791806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1586939143842!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</section>
+
+<!-- footer -->
+
+<footer>
+  <div>
+    <h4>Decore</h4>
+    <img src="./img/logo.png" alt="logo">
+  </div>
+
+  <div>
+    <img src="./img/facebook.png" alt="">
+    <img src="./img/telegram.png" alt="">
+    <img src="./img/twitter.png" alt="">
+    <img src="./img/vk.png" alt="">
+    <img src="./img/phone.png" alt="">
+  </div>
+  
+</footer>
+
+<!-- //Контейнер -->
+</div>
+<script src="./js/enter.js"></script>
+<script src="./js/catalog.js"></script>
+<script src="./js/store.js"></script>
+<script src="./js/createOneProduct.js"></script>
+<script src="./js/scriptCatalog.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/cart.js"></script>
+</body>
+</html>
+ 
